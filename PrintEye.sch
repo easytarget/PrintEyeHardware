@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:EyeDrop-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr User 7874 6299
 encoding utf-8
@@ -15,22 +14,20 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L my-hobbylib:SH1106_I2C_OLED OLED2
+L OLEDs:SSD1315-096 OLED2
 U 1 1 5C548570
-P 3250 1350
-F 0 "OLED2" H 3200 850 50  0000 L CNN
-F 1 "SH1106_I2C_OLED" H 2950 1300 50  0000 L CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical" H 3150 1650 50  0001 C CNN
-F 3 "" H 3150 1650 50  0001 C CNN
-	1    3250 1350
-	-1   0    0    1   
+P 3000 1200
+F 0 "OLED2" H 2850 1350 50  0000 L CNN
+F 1 "SSD1315_I2C_OLED" H 2650 1150 50  0000 L CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical" H 2900 1500 50  0001 C CNN
+F 3 "" H 2900 1500 50  0001 C CNN
+	1    3000 1200
+	1    0    0    -1  
 $EndComp
 Text GLabel 1650 3200 2    50   Output ~ 0
 GND
-Text GLabel 3700 2150 2    50   Input ~ 0
+Text GLabel 3350 2350 2    50   Input ~ 0
 GND
-Wire Wire Line
-	3350 2150 3350 1950
 $Comp
 L Connector:Conn_01x04_Female CONN1
 U 1 1 5C54D33E
@@ -48,18 +45,18 @@ F 7 "URXD0" H 1450 4800 50  0000 C CNN "Field7"
 $EndComp
 Text GLabel 1650 3400 2    50   Output ~ 0
 5v
-Text GLabel 3700 2050 2    50   Input ~ 0
+Text GLabel 3350 2250 2    50   Input ~ 0
 5v
 $Comp
-L my-hobbylib:SH1106_I2C_OLED OLED1
+L OLEDs:SSD1315-096 OLED1
 U 1 1 5D168B9C
-P 1500 1350
-F 0 "OLED1" H 1450 850 50  0000 L CNN
-F 1 "SH1106_I2C_OLED" H 1200 1300 50  0000 L CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical" H 1400 1650 50  0001 C CNN
-F 3 "" H 1400 1650 50  0001 C CNN
-	1    1500 1350
-	-1   0    0    1   
+P 1300 1200
+F 0 "OLED1" H 1150 1350 50  0000 L CNN
+F 1 "SSD1315_I2C_OLED" H 1000 1150 50  0000 L CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical" H 1200 1500 50  0001 C CNN
+F 3 "" H 1200 1500 50  0001 C CNN
+	1    1300 1200
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J1
@@ -80,48 +77,18 @@ F 11 "GREEN" H 1200 3850 50  0000 C CNN "Field4"
 	1    1200 3500
 	-1   0    0    1   
 $EndComp
-Text GLabel 1950 2150 2    50   Input ~ 0
+Text GLabel 1650 2350 2    50   Input ~ 0
 GND
-Wire Wire Line
-	1600 2150 1600 1950
-Wire Wire Line
-	1950 2150 1600 2150
-Text GLabel 1950 2050 2    50   Input ~ 0
+Text GLabel 1650 2250 2    50   Input ~ 0
 5v
-Wire Wire Line
-	3700 2150 3350 2150
-Wire Wire Line
-	3700 2050 3550 2050
-Wire Wire Line
-	3550 2050 3550 1950
-Wire Wire Line
-	1950 2050 1800 2050
-Wire Wire Line
-	1800 2050 1800 1950
-Text GLabel 1950 2250 2    50   BiDi ~ 0
-SCL1
-Text GLabel 3700 2250 2    50   BiDi ~ 0
-SCL2
-Text GLabel 1950 2350 2    50   BiDi ~ 0
+Text GLabel 1650 2150 2    50   BiDi ~ 0
+SCK1
+Text GLabel 3350 2150 2    50   BiDi ~ 0
+SCK2
+Text GLabel 1650 2050 2    50   BiDi ~ 0
 SDA1
-Text GLabel 3700 2350 2    50   BiDi ~ 0
+Text GLabel 3350 2050 2    50   BiDi ~ 0
 SDA2
-Wire Wire Line
-	3700 2250 3150 2250
-Wire Wire Line
-	3150 2250 3150 1950
-Wire Wire Line
-	3700 2350 2950 2350
-Wire Wire Line
-	2950 2350 2950 1950
-Wire Wire Line
-	1950 2350 1200 2350
-Wire Wire Line
-	1200 2350 1200 1950
-Wire Wire Line
-	1950 2250 1400 2250
-Wire Wire Line
-	1400 2250 1400 1950
 Text GLabel 6550 4300 0    50   Input ~ 0
 GND
 Text GLabel 5850 700  0    50   Input ~ 0
@@ -135,11 +102,11 @@ Wire Wire Line
 Text GLabel 5850 2500 0    50   BiDi ~ 0
 SDA1
 Text GLabel 5850 2600 0    50   BiDi ~ 0
-SCL1
+SCK1
 Text GLabel 5850 2700 0    50   BiDi ~ 0
 SDA2
 Text GLabel 5850 2800 0    50   BiDi ~ 0
-SCL2
+SCK2
 Wire Wire Line
 	6050 2800 5850 2800
 Wire Wire Line
@@ -269,9 +236,9 @@ Wire Notes Line
 	750  5700 750  4550
 Text Notes 800  5650 0    118  ~ 0
 Duet\nAdapter Cable
-Text Notes 1100 850  2    118  ~ 0
+Text Notes 1000 800  2    118  ~ 0
 Left
-Text Notes 2950 850  2    118  ~ 0
+Text Notes 2850 800  2    118  ~ 0
 Right
 Text Notes 6300 1000 2    118  ~ 0
 CPU
@@ -554,4 +521,36 @@ Wire Wire Line
 	5350 1600 6050 1600
 Wire Wire Line
 	5350 1400 5350 1600
+Wire Wire Line
+	1650 2250 1200 2250
+Wire Wire Line
+	1200 2250 1200 2000
+Wire Wire Line
+	1650 2350 1000 2350
+Wire Wire Line
+	1000 2350 1000 2000
+Wire Wire Line
+	1650 2150 1400 2150
+Wire Wire Line
+	1400 2150 1400 2000
+Wire Wire Line
+	1650 2050 1600 2050
+Wire Wire Line
+	1600 2050 1600 2000
+Wire Wire Line
+	2700 2000 2700 2350
+Wire Wire Line
+	2700 2350 3350 2350
+Wire Wire Line
+	2900 2000 2900 2250
+Wire Wire Line
+	2900 2250 3350 2250
+Wire Wire Line
+	3100 2000 3100 2150
+Wire Wire Line
+	3100 2150 3350 2150
+Wire Wire Line
+	3300 2000 3300 2050
+Wire Wire Line
+	3300 2050 3350 2050
 $EndSCHEMATC
