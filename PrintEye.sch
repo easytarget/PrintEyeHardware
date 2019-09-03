@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:PrintEye-cache
 EELAYER 30 0
 EELAYER END
 $Descr User 7874 6299
 encoding utf-8
 Sheet 1 1
 Title "Arduino 'Eye' temp display for RepRap firmware"
-Date "2019-06-28"
+Date "2019-09-03"
 Rev "v0.01"
 Comp "Owen Carter"
 Comment1 ""
@@ -70,8 +71,8 @@ F 4 "BLACK" H 1200 3050 50  0000 C CNN "Field5"
 F 5 "GND" H 1350 3200 50  0000 C CNN "Field6"
 F 6 "CTS" H 1350 3300 50  0000 C CNN "Field7"
 F 7 "VCC" H 1350 3400 50  0000 C CNN "Field8"
-F 8 "TX" H 1350 3500 50  0000 C CNN "Field9"
-F 9 "RX" H 1350 3600 50  0000 C CNN "Field10"
+F 8 "RX" H 1350 3500 50  0000 C CNN "Field9"
+F 9 "TX" H 1350 3600 50  0000 C CNN "Field10"
 F 10 "RTS" H 1350 3700 50  0000 C CNN "Field11"
 F 11 "GREEN" H 1200 3850 50  0000 C CNN "Field4"
 	1    1200 3500
@@ -172,10 +173,10 @@ Wire Wire Line
 	5850 3100 6050 3100
 Wire Wire Line
 	5800 3200 6050 3200
-Text GLabel 1600 3500 2    50   Input ~ 0
-TX-3v3
-Text GLabel 1650 3600 2    50   Output ~ 0
+Text GLabel 1650 3500 2    50   Output ~ 0
 RX-3v3
+Text GLabel 1600 3600 2    50   Input ~ 0
+TX-3v3
 Text GLabel 1600 3700 2    50   Input ~ 0
 RTS
 Wire Wire Line
@@ -183,9 +184,9 @@ Wire Wire Line
 Wire Wire Line
 	1400 3400 1650 3400
 Wire Wire Line
-	1400 3500 1600 3500
+	1400 3500 1650 3500
 Wire Wire Line
-	1400 3600 1650 3600
+	1400 3600 1600 3600
 Wire Wire Line
 	1400 3700 1600 3700
 $Comp
@@ -200,8 +201,8 @@ F 4 "BLACK" H 2200 4700 50  0000 C CNN "Field5"
 F 5 "GND" H 2300 4800 50  0000 C CNN "Field6"
 F 6 "CTS" H 2300 4900 50  0000 C CNN "Field7"
 F 7 "VCC" H 2300 5000 50  0000 C CNN "Field8"
-F 8 "TX" H 2300 5100 50  0000 C CNN "Field9"
-F 9 "RX" H 2300 5200 50  0000 C CNN "Field10"
+F 8 "RX" H 2300 5100 50  0000 C CNN "Field9"
+F 9 "TX" H 2300 5200 50  0000 C CNN "Field10"
 F 10 "RTS" H 2300 5300 50  0000 C CNN "Field11"
 F 11 "GREEN" H 2200 5400 50  0000 C CNN "Field4"
 	1    2150 5100
@@ -210,7 +211,7 @@ $EndComp
 Wire Wire Line
 	1500 4800 1950 4800
 Wire Wire Line
-	1500 5100 1950 5200
+	1500 5100 1950 5100
 NoConn ~ 1950 5300
 NoConn ~ 1950 4900
 NoConn ~ 6050 3800
@@ -313,7 +314,7 @@ Connection ~ 5450 2900
 Wire Wire Line
 	5450 2900 5450 2800
 Wire Wire Line
-	1500 5000 1950 5100
+	1500 5000 1950 5200
 Wire Wire Line
 	1500 4900 1950 5000
 $Comp
@@ -403,13 +404,13 @@ Wire Wire Line
 Connection ~ 2650 3600
 Wire Wire Line
 	2650 3600 2650 3500
-Text GLabel 4100 3250 2    50   Input ~ 0
+Text GLabel 4100 3250 2    50   Output ~ 0
 RX
 Text GLabel 3600 2850 0    50   Input ~ 0
 3v3
 Text GLabel 3400 3250 0    50   Input ~ 0
 RX-3v3
-Text GLabel 3400 4150 0    50   Input ~ 0
+Text GLabel 3400 4150 0    50   Output ~ 0
 TX-3v3
 Text GLabel 3600 3750 0    50   Input ~ 0
 3v3
