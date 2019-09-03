@@ -65,7 +65,7 @@ U 1 1 5D16E4E1
 P 1200 3500
 F 0 "J1" H 1650 3350 50  0000 C CNN
 F 1 "FTDI" H 1650 3450 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical" H 1200 3500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1200 3500 50  0001 C CNN
 F 3 "~" H 1200 3500 50  0001 C CNN
 F 4 "BLACK" H 1200 3050 50  0000 C CNN "Field5"
 F 5 "GND" H 1350 3200 50  0000 C CNN "Field6"
@@ -473,7 +473,7 @@ U 1 1 5D3DDC60
 P 4650 1500
 F 0 "J2" H 4800 1400 50  0000 C CNN
 F 1 "Pause Button" H 5000 1500 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4650 1500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4650 1500 50  0001 C CNN
 F 3 "~" H 4650 1500 50  0001 C CNN
 	1    4650 1500
 	-1   0    0    1   
@@ -484,7 +484,7 @@ U 1 1 5D3DE9B9
 P 4650 1050
 F 0 "J3" H 4800 950 50  0000 C CNN
 F 1 "Activity LED" H 4950 1050 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4650 1050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4650 1050 50  0001 C CNN
 F 3 "~" H 4650 1050 50  0001 C CNN
 	1    4650 1050
 	-1   0    0    1   
