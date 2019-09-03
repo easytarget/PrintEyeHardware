@@ -6,4 +6,6 @@
 * A button
 * A LED
 
-Create a Footprint for the displays..
+[Schematic](./docs/PrintEye.pdf)
+
+![PCB](./docs/PrintEye.jpg)
