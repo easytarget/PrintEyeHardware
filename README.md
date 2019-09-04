@@ -6,6 +6,7 @@
 * A button
 * A LED
 
-[Schematic](./docs/PrintEye.pdf)
+![PCB](./docs/PrintEye-pcb.jpg)
 
-![PCB](./docs/PrintEye.jpg)
+i![Schematic](./docs/PrintEye-Schematic.png)
+[Full Schematic](./docs/PrintEye-Schematic.pdf)

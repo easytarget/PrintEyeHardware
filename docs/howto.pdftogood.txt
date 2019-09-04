@@ -1,0 +1,1 @@
+convert -alpha off -density 300 Schematic.pdf Schematic.png

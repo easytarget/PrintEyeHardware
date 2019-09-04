@@ -7,9 +7,9 @@ encoding utf-8
 Sheet 1 1
 Title "Arduino 'Eye' temp display for RepRap firmware"
 Date "2019-09-03"
-Rev "v0.01"
+Rev "v1.0"
 Comp "Owen Carter"
-Comment1 ""
+Comment1 "Tested Design"
 Comment2 ""
 Comment3 ""
 Comment4 ""
