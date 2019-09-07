@@ -6,10 +6,10 @@ $Descr User 7874 6299
 encoding utf-8
 Sheet 1 1
 Title "Arduino 'Eye' temp display for RepRap firmware"
-Date "2019-09-03"
+Date "2019-09-07"
 Rev "v1.0"
-Comp "Owen Carter"
-Comment1 "Tested Design"
+Comp "EasyTarget.org"
+Comment1 "Final; tested"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -37,8 +37,8 @@ F 0 "#CONN1" H 1550 5000 50  0000 L CNN
 F 1 "Duet" H 1600 4900 50  0000 L CNN
 F 2 "" H 1300 4900 50  0001 C CNN
 F 3 "~" H 1300 4900 50  0001 C CNN
-F 4 "5v" H 1450 4900 50  0000 C CNN "Field4"
-F 5 "0v" H 1450 5000 50  0000 C CNN "Field5"
+F 4 "GND" H 1450 4900 50  0000 C CNN "Field4"
+F 5 "+5v" H 1450 5000 50  0000 C CNN "Field5"
 F 6 "UTXD0" H 1450 4700 50  0000 C CNN "Field6"
 F 7 "URXD0" H 1450 4800 50  0000 C CNN "Field7"
 	1    1300 4900
@@ -209,8 +209,6 @@ F 11 "GREEN" H 2200 5400 50  0000 C CNN "Field4"
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	1500 4800 1950 4800
-Wire Wire Line
 	1500 5100 1950 5100
 NoConn ~ 1950 5300
 NoConn ~ 1950 4900
@@ -255,12 +253,12 @@ Wire Wire Line
 	5050 2050 5050 2250
 NoConn ~ 1400 3300
 $Comp
-L Device:CP C5
+L Device:C C5
 U 1 1 5D3BA784
 P 5250 3000
 F 0 "C5" V 5400 2800 50  0000 L CNN
 F 1 "100nF" V 5500 2750 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5288 2850 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 5288 2850 50  0001 C CNN
 F 3 "~" H 5250 3000 50  0001 C CNN
 	1    5250 3000
 	0    1    1    0   
@@ -316,7 +314,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 5000 1950 5200
 Wire Wire Line
-	1500 4900 1950 5000
+	1500 4900 1950 4800
 $Comp
 L Device:R R2
 U 1 1 5D1C3CA2
@@ -554,4 +552,6 @@ Wire Wire Line
 	3300 2000 3300 2050
 Wire Wire Line
 	3300 2050 3350 2050
+Wire Wire Line
+	1500 4800 1950 5000
 $EndSCHEMATC
