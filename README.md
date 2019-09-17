@@ -1,5 +1,5 @@
 # Duet 'PrintEye' temperature display hardware
-## For the full firmware and project description please go to
+## This repository is dedicated to the Hardware used in the printEye; For the full firmware and project description please go to:
 ## https://easytarget.org/ogit/ard/PrintEye
 
 This is a low cost and lightweight temperature and status monitor for 3d Printers using Duet (or other repRap Firmware) controllers.
