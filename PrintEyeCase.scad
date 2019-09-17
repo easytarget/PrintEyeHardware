@@ -6,7 +6,7 @@ pcby=31.5; // not from the model
 
 edgeRad=2;  // round off
 
-fitting = !true;
+fitting = true;
 
 if(!fitting) {
     casebody();
@@ -16,25 +16,25 @@ if(!fitting) {
     translate([-pcbx/2,pcby/2,17])
     rotate([180,0,0])
     pcb();
-    casebody();
-    casestand();
+    color("grey",0.4) casestand();
+    color("lavender",0.4) casebody();
 }
 
 module casestand() {
-    // Four tabs to grip onto case, wider at base
+    // Four tabs to grip onto case, wider at top
     translate([0,0,17.5])
-    linear_extrude(height=2,convexity=8) {
+    linear_extrude(height=4,convexity=8) {
         difference() {
             union() {
-                square([pcbx+1,16],center=true);
+                //square([pcbx+1,16],center=true);
                 square([30,pcby+0.8],center=true);
             }
             square([pcbx-3.2,pcby-3.4],center=true);
         }
     }
-    // Thinner upper part of tabs
-    translate([0,0,19.5])
-    linear_extrude(height=12,convexity=8) {
+    // Thinner part of tabs
+    translate([0,0,21.5])
+    linear_extrude(height=10,convexity=8) {
         difference() {
             union() {
                 square([pcbx+0.8,16],center=true);
