@@ -1,1 +1,5 @@
-convert -alpha off -density 300 Schematic.pdf Schematic.png
+# Make sure you have ImageMagick installed; then run:
+convert -alpha off -density 300 Schematic.pdf Schematic.jpg
+
+# Should give a reasonable result; playing with density can improve/decrease legibility.
+# Dont turn alpha on unless you like having the page background displayed through the image..
