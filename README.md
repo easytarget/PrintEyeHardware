@@ -29,10 +29,11 @@ The included case is designed to have the OLED panels glued in place. The PCB th
   * I used thin insulated solid core wires to hold the LED positioned between the two OLED connectors, with a translucent case this is very effective, the LED shines through the lower front of the case itself.
   * The button recess is sized for a 12mm diameter button; glue it in place and then run wires to the PCB. I used a dupont connector here too.
 
-####[Full Schematic](./docs/PrintEye-Schematic.pdf)
+#### Schematic ([Full](./docs/PrintEye-Schematic.pdf))
 ![Schematic](./docs/PrintEye-Schematic.png)
 
-####Parts List:
+#### Parts List:
+
 |Ref|Qnty|Value|KiCad Part|Description|
 |---|----|-----|----|-----------|
 |C1,C2|2|22pF|Device:C|Unpolarized capacitor|
