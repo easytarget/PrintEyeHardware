@@ -1,11 +1,11 @@
 # Duet 'PrintEye' temperature display hardware
 ## This repository is dedicated to the Hardware used in the printEye; For the full firmware and project description please go to:
-## https://easytarget.org/ogit/ard/PrintEye
+# https://easytarget.org/ogit/ard/PrintEye
 
 This is a low cost and lightweight temperature and status monitor for 3d Printers using Duet (or other repRap Firmware) controllers.
 
 * Atmega328P based
-* 2xOLED displays on individual I2C busses
+* 2 x i0.96' OLED displays on individual I2C busses
 * Level Shifter for Serial connections (duet is 3.2v, 328p is 5v)
 * A button
 * A LED
@@ -24,16 +24,16 @@ PCB Notes:
 
 ![Case Fitting](./docs/PrintEyeCase-layout.png)
 
-The included case is designed to have the OLED panels glued in place and the PCB then mounts onto that. 
+The included case is designed to have the OLED panels glued in place and the PCB then mounts onto their connectors.
 * Glue it lightly! I used generic contact adhesive; this is strong enough but will allow the displays to be gently levered out if needed in the future.
 * The case back should be a press fit, the plug slot in the back is sized for a dupont connector.
-* The button recess is sized for a 12mm push button. Again; glue it in place and then run wires to the PCB.
+* The button recess is sized for a 12mm push button. Again; glue it in place and then run wires to the PCB. I used a dupont connector here too.
 
 ####[Full Schematic](./docs/PrintEye-Schematic.pdf)
 ![Schematic](./docs/PrintEye-Schematic.png)
 
 ####Parts List:
-|Ref|Qnty|Value|Part|Description|
+|Ref|Qnty|Value|KiCad Part|Description|
 |---|----|-----|----|-----------|
 |C1,C2|2|22pF|Device:C|Unpolarized capacitor|
 |C5|1|100nF|Device:C|Unpolarized capacitor|
