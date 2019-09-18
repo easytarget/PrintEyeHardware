@@ -5,14 +5,14 @@
 This is a low cost and lightweight temperature and status monitor for 3d Printers using Duet (or other repRap Firmware) controllers.
 
 * Atmega328P based
-* 2 x i0.96' OLED displays on individual I2C busses
+* 2 x 0.96' OLED displays on individual I2C busses
 * Level Shifter for Serial connections (duet is 3.2v, 328p is 5v)
 * A button
 * A LED
 * A case
 * Gerber Files and more.
 
-![PCB](./docs/PrintEye-pcb.jpg)
+![Case Fitting](./docs/PrintEyeCase-layout.png)
 
 PCB Notes:
 * The layout is single sided (despite the render above).
@@ -22,11 +22,11 @@ PCB Notes:
 * Fitting and mounting the LED and button I leave up to you.
  * I used thin insulated solid core wires to positioned it between the two OLED connectors, with a translucent case this is very effective.
 
-![Case Fitting](./docs/PrintEyeCase-layout.png)
+![PCB](./docs/PrintEye-pcb.jpg)
 
-The included case is designed to have the OLED panels glued in place and the PCB then mounts onto their connectors.
+The included case is designed to have the OLED panels glued in place. The PCB then mounts onto their connectors.
 * Glue it lightly! I used generic contact adhesive; this is strong enough but will allow the displays to be gently levered out if needed in the future.
-* The case back should be a press fit, the plug slot in the back is sized for a dupont connector.
+* The case back is a press fit, the plug slot in the back is sized for a dupont connector.
 * The button recess is sized for a 12mm push button. Again; glue it in place and then run wires to the PCB. I used a dupont connector here too.
 
 ####[Full Schematic](./docs/PrintEye-Schematic.pdf)
@@ -45,3 +45,4 @@ The included case is designed to have the OLED panels glued in place and the PCB
 |U1|1|ATmega328-PU|MCU_Microchip_ATmega:ATmega328-PU|20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28|
 |Y1|1|16MHz|Device:Crystal|HC49-4H_Vertical	Two pin crystal|
 
+![Hardware](./docs/hardware.jpg)
