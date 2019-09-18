@@ -10,24 +10,24 @@ This is a low cost and lightweight temperature and status monitor for 3d Printer
 * A button
 * A LED
 * A case
-* Gerber Files and more.
+* I include the full KiCad project, exported Gerber Files and more.
 
 ![Case Fitting](./docs/PrintEyeCase-layout.png)
 
 PCB Notes:
 * The layout is single sided (despite the render above).
  * There are three bridges that need to be placed as well as the components on the top side.
-* Track and pad size+spacing is pretty generous, but this is a smallish board so some care is needed ;-)
+* Track and pad size+spacing in the PCB layout is pretty generous, but this is a smallish board so some care is needed ;-)
 * The FTDI connector needs to be placed on the reverse (copper) side of the PCB.
-* Fitting and mounting the LED and button I leave up to you.
- * I used thin insulated solid core wires to positioned it between the two OLED connectors, with a translucent case this is very effective.
 
 ![PCB](./docs/PrintEye-pcb.jpg)
 
 The included case is designed to have the OLED panels glued in place. The PCB then mounts onto their connectors.
 * Glue it lightly! I used generic contact adhesive; this is strong enough but will allow the displays to be gently levered out if needed in the future.
 * The case back is a press fit, the plug slot in the back is sized for a dupont connector.
-* The button recess is sized for a 12mm push button. Again; glue it in place and then run wires to the PCB. I used a dupont connector here too.
+* Fitting and mounting the LED and button I leave up to you.
+ * I used thin insulated solid core wires to hold the LED positioned between the two OLED connectors, with a translucent case this is very effective.
+ * The button recess is sized for a 12mm push button; glue it in place and then run wires to the PCB. I used a dupont connector here too.
 
 ####[Full Schematic](./docs/PrintEye-Schematic.pdf)
 ![Schematic](./docs/PrintEye-Schematic.png)
